@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-08T09:59:19Z" name="Suite" finished-at="2024-03-08T10:01:58Z" duration-ms="159050">
+    <groups>
+    </groups>
+    <test started-at="2024-03-08T09:59:19Z" name="Test" finished-at="2024-03-08T10:01:58Z" duration-ms="159050">
+      <class name="com.crm.qa.testcases.CustomerLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CustomerLoginTest@35645047]" started-at="2024-03-08T15:29:32Z" name="setUp" finished-at="2024-03-08T15:29:37Z" duration-ms="4901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="customerlogin()[pri:1, instance:com.crm.qa.testcases.CustomerLoginTest@35645047]" started-at="2024-03-08T15:29:37Z" name="customerlogin" finished-at="2024-03-08T15:29:39Z" duration-ms="2255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerlogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CustomerLoginTest@35645047]" started-at="2024-03-08T15:29:39Z" name="tearDown" finished-at="2024-03-08T15:29:40Z" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.CustomerLoginTest@35645047]" started-at="2024-03-08T15:29:40Z" name="teardownBrowser" finished-at="2024-03-08T15:29:40Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- com.crm.qa.testcases.CustomerLoginTest -->
+      <class name="com.crm.qa.testcases.CustomerTransactionPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CustomerTransactionPageTest@6f44a157]" started-at="2024-03-08T15:29:50Z" name="setUp" finished-at="2024-03-08T15:29:56Z" duration-ms="6094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_Deposit_With_ValideAmmount()[pri:1, instance:com.crm.qa.testcases.CustomerTransactionPageTest@6f44a157]" started-at="2024-03-08T15:29:56Z" name="Verify_Deposit_With_ValideAmmount" finished-at="2024-03-08T15:29:59Z" duration-ms="2444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Deposit_With_ValideAmmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CustomerTransactionPageTest@6f44a157]" started-at="2024-03-08T15:29:59Z" name="tearDown" finished-at="2024-03-08T15:29:59Z" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.CustomerTransactionPageTest@6f44a157]" started-at="2024-03-08T15:29:59Z" name="teardownBrowser" finished-at="2024-03-08T15:29:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- com.crm.qa.testcases.CustomerTransactionPageTest -->
+      <class name="com.crm.qa.testcases.CustomersPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CustomersPageTest@5ef5c734]" started-at="2024-03-08T15:30:29Z" name="setUp" finished-at="2024-03-08T15:30:35Z" duration-ms="6026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DeleteCustomerEntry()[pri:1, instance:com.crm.qa.testcases.CustomersPageTest@5ef5c734]" started-at="2024-03-08T15:30:35Z" name="DeleteCustomerEntry" finished-at="2024-03-08T15:30:36Z" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteCustomerEntry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CustomersPageTest@5ef5c734]" started-at="2024-03-08T15:30:36Z" name="tearDown" finished-at="2024-03-08T15:30:36Z" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.CustomersPageTest@5ef5c734]" started-at="2024-03-08T15:30:36Z" name="teardownBrowser" finished-at="2024-03-08T15:30:36Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- com.crm.qa.testcases.CustomersPageTest -->
+      <class name="com.crm.qa.testcases.AddCustomerPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AddCustomerPageTest@5ddcc487]" started-at="2024-03-08T15:29:40Z" name="setUp" finished-at="2024-03-08T15:29:48Z" duration-ms="8703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddCustomerNotExist()[pri:1, instance:com.crm.qa.testcases.AddCustomerPageTest@5ddcc487]" started-at="2024-03-08T15:29:48Z" name="AddCustomerNotExist" finished-at="2024-03-08T15:29:50Z" duration-ms="1725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCustomerNotExist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.AddCustomerPageTest@5ddcc487]" started-at="2024-03-08T15:29:50Z" name="tearDown" finished-at="2024-03-08T15:29:50Z" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.AddCustomerPageTest@5ddcc487]" started-at="2024-03-08T15:29:50Z" name="teardownBrowser" finished-at="2024-03-08T15:29:50Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AddCustomerPageTest@5ddcc487]" started-at="2024-03-08T15:31:07Z" name="setUp" finished-at="2024-03-08T15:31:14Z" duration-ms="6407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddCustomerExist()[pri:2, instance:com.crm.qa.testcases.AddCustomerPageTest@5ddcc487]" started-at="2024-03-08T15:31:14Z" name="AddCustomerExist" finished-at="2024-03-08T15:31:17Z" depends-on-methods="com.crm.qa.testcases.AddCustomerPageTest.AddCustomerNotExist" duration-ms="3781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCustomerExist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.AddCustomerPageTest@5ddcc487]" started-at="2024-03-08T15:31:17Z" name="tearDown" finished-at="2024-03-08T15:31:18Z" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.AddCustomerPageTest@5ddcc487]" started-at="2024-03-08T15:31:18Z" name="teardownBrowser" finished-at="2024-03-08T15:31:18Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- com.crm.qa.testcases.AddCustomerPageTest -->
+      <class name="com.crm.qa.testcases.DepositTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.DepositTest@6bc407fd]" started-at="2024-03-08T15:30:18Z" name="setUp" finished-at="2024-03-08T15:30:25Z" duration-ms="7289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyDepositWithValidAmount()[pri:1, instance:com.crm.qa.testcases.DepositTest@6bc407fd]" started-at="2024-03-08T15:30:25Z" name="VerifyDepositWithValidAmount" finished-at="2024-03-08T15:30:29Z" duration-ms="3658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDepositWithValidAmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.DepositTest@6bc407fd]" started-at="2024-03-08T15:30:29Z" name="tearDown" finished-at="2024-03-08T15:30:29Z" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.DepositTest@6bc407fd]" started-at="2024-03-08T15:30:29Z" name="teardownBrowser" finished-at="2024-03-08T15:30:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.DepositTest@6bc407fd]" started-at="2024-03-08T15:30:58Z" name="setUp" finished-at="2024-03-08T15:31:04Z" duration-ms="6269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyDepositWithInvalidAmount()[pri:2, instance:com.crm.qa.testcases.DepositTest@6bc407fd]" started-at="2024-03-08T15:31:04Z" name="VerifyDepositWithInvalidAmount" finished-at="2024-03-08T15:31:07Z" duration-ms="3236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDepositWithInvalidAmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.DepositTest@6bc407fd]" started-at="2024-03-08T15:31:07Z" name="tearDown" finished-at="2024-03-08T15:31:07Z" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.DepositTest@6bc407fd]" started-at="2024-03-08T15:31:07Z" name="teardownBrowser" finished-at="2024-03-08T15:31:07Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- com.crm.qa.testcases.DepositTest -->
+      <class name="com.crm.qa.testcases.WithdrawalTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:30:36Z" name="setUp" finished-at="2024-03-08T15:30:44Z" duration-ms="7900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_Withdraw_With_ValideAmmount()[pri:1, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:30:44Z" name="Verify_Withdraw_With_ValideAmmount" finished-at="2024-03-08T15:30:57Z" duration-ms="13096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Withdraw_With_ValideAmmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:30:57Z" name="tearDown" finished-at="2024-03-08T15:30:58Z" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:30:58Z" name="teardownBrowser" finished-at="2024-03-08T15:30:58Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:31:18Z" name="setUp" finished-at="2024-03-08T15:31:23Z" duration-ms="5716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_Withdraw_With_InValideAmmount()[pri:2, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:31:23Z" name="Verify_Withdraw_With_InValideAmmount" finished-at="2024-03-08T15:31:35Z" duration-ms="11432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Withdraw_With_InValideAmmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:31:35Z" name="tearDown" finished-at="2024-03-08T15:31:35Z" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:31:35Z" name="teardownBrowser" finished-at="2024-03-08T15:31:35Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:31:35Z" name="setUp" finished-at="2024-03-08T15:31:44Z" duration-ms="8689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_Withdraw_With_InSufficient()[pri:3, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:31:44Z" name="Verify_Withdraw_With_InSufficient" finished-at="2024-03-08T15:31:58Z" duration-ms="13817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Withdraw_With_InSufficient -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:31:58Z" name="tearDown" finished-at="2024-03-08T15:31:58Z" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.WithdrawalTest@291f18]" started-at="2024-03-08T15:31:58Z" name="teardownBrowser" finished-at="2024-03-08T15:31:58Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- com.crm.qa.testcases.WithdrawalTest -->
+      <class name="com.crm.qa.testcases.BankManagerNavigationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.BankManagerNavigationPageTest@17d88132]" started-at="2024-03-08T15:29:19Z" name="setUp" finished-at="2024-03-08T15:29:28Z" duration-ms="9484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBankManagerLogin()[pri:0, instance:com.crm.qa.testcases.BankManagerNavigationPageTest@17d88132]" started-at="2024-03-08T15:29:28Z" name="testBankManagerLogin" finished-at="2024-03-08T15:29:32Z" duration-ms="3661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBankManagerLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.BankManagerNavigationPageTest@17d88132]" started-at="2024-03-08T15:29:32Z" name="tearDown" finished-at="2024-03-08T15:29:32Z" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.BankManagerNavigationPageTest@17d88132]" started-at="2024-03-08T15:29:32Z" name="teardownBrowser" finished-at="2024-03-08T15:29:32Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- com.crm.qa.testcases.BankManagerNavigationPageTest -->
+      <class name="com.crm.qa.testcases.OpenAccountPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.OpenAccountPageTest@16eccb2e]" started-at="2024-03-08T15:29:59Z" name="setUp" finished-at="2024-03-08T15:30:05Z" duration-ms="5995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="OpenAccount()[pri:1, instance:com.crm.qa.testcases.OpenAccountPageTest@16eccb2e]" started-at="2024-03-08T15:30:05Z" name="OpenAccount" finished-at="2024-03-08T15:30:17Z" duration-ms="12350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.OpenAccountPageTest@16eccb2e]" started-at="2024-03-08T15:30:17Z" name="tearDown" finished-at="2024-03-08T15:30:18Z" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.crm.qa.testcases.OpenAccountPageTest@16eccb2e]" started-at="2024-03-08T15:30:18Z" name="teardownBrowser" finished-at="2024-03-08T15:30:18Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- com.crm.qa.testcases.OpenAccountPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
