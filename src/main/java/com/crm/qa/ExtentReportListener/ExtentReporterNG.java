@@ -1,9 +1,5 @@
 package com.crm.qa.ExtentReportListener;
 
-
-
-
-
 import java.io.File;
 import java.util.Calendar;
 import java.util.Date;
@@ -23,57 +19,74 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class ExtentReporterNG implements IReporter {
-	private ExtentReports extent;
+    private ExtentReports extent;
 
-	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
-			String outputDirectory) {
-		extent = new ExtentReports(outputDirectory + File.separator
-				+ "Extent.html", true);
+    // Implementation of the generateReport method from the IReporter interface
+    public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
+            String outputDirectory) {
+        // Initialize ExtentReports object with the specified output directory and file name
+        extent = new ExtentReports(outputDirectory + File.separator + "Extent.html", true);
 
-		for (ISuite suite : suites) {
-			Map<String, ISuiteResult> result = suite.getResults();
+        // Iterate through all test suites
+        for (ISuite suite : suites) {
+            // Get the results of each suite
+            Map<String, ISuiteResult> result = suite.getResults();
 
-			for (ISuiteResult r : result.values()) {
-				ITestContext context = r.getTestContext();
+            // Iterate through all test results within the suite
+            for (ISuiteResult r : result.values()) {
+                ITestContext context = r.getTestContext();
 
-				buildTestNodes(context.getPassedTests(), LogStatus.PASS);
-				buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
-				buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
-			}
-		}
+                // Build nodes for passed tests
+                buildTestNodes(context.getPassedTests(), LogStatus.PASS);
+                
+                // Build nodes for failed tests
+                buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
+                
+                // Build nodes for skipped tests
+                buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
+            }
+        }
 
-		extent.flush();
-		extent.close();
-	}
+        // Flush and close the ExtentReports object to complete the report generation
+        extent.flush();
+        extent.close();
+    }
 
-	private void buildTestNodes(IResultMap tests, LogStatus status) {
-		ExtentTest test;
+    // Build nodes for individual tests within a result map
+    private void buildTestNodes(IResultMap tests, LogStatus status) {
+        ExtentTest test;
 
-		if (tests.size() > 0) {
-			for (ITestResult result : tests.getAllResults()) {
-				test = extent.startTest(result.getMethod().getMethodName());
+        // Check if there are any test results in the result map
+        if (tests.size() > 0) {
+            for (ITestResult result : tests.getAllResults()) {
+                // Start a new test in the ExtentReports object with the test method name
+                test = extent.startTest(result.getMethod().getMethodName());
 
-				test.setStartedTime(getTime(result.getStartMillis()));
-				test.setEndedTime(getTime(result.getEndMillis()));
+                // Set the start and end times for the test
+                test.setStartedTime(getTime(result.getStartMillis()));
+                test.setEndedTime(getTime(result.getEndMillis()));
 
-				for (String group : result.getMethod().getGroups())
-					test.assignCategory(group);
+                // Assign test categories based on groups
+                for (String group : result.getMethod().getGroups())
+                    test.assignCategory(group);
 
-				if (result.getThrowable() != null) {
-					test.log(status, result.getThrowable());
-				} else {
-					test.log(status, "Test " + status.toString().toLowerCase()
-							+ "ed");
-				}
+                // Log test status and details (including any throwable/exception)
+                if (result.getThrowable() != null) {
+                    test.log(status, result.getThrowable());
+                } else {
+                    test.log(status, "Test " + status.toString().toLowerCase() + "ed");
+                }
 
-				extent.endTest(test);
-			}
-		}
-	}
+                // End the test in the ExtentReports object
+                extent.endTest(test);
+            }
+        }
+    }
 
-	private Date getTime(long millis) {
-		Calendar calendar = Calendar.getInstance();
-		calendar.setTimeInMillis(millis);
-		return calendar.getTime();
-	}
+    // Convert millis to Date object
+    private Date getTime(long millis) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(millis);
+        return calendar.getTime();
+    }
 }

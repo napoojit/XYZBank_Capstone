@@ -10,81 +10,61 @@ import com.crm.qa.pages.WithdrawalPage1;
 import com.crm.qa.pages.AddCustomerPage;
 import com.crm.qa.pages.CustomerLoginPage;
 
+// Test class for AddCustomerPage
+public class AddCustomerPageTest extends TestBase {
+    CustomerLoginPage loginPage;
+    WithdrawalPage1 accountPage;
+    AddCustomerPage addCustomerPage;
+    String AccountexistUser = prop.getProperty("AccontExistUser");
+    String fname = prop.getProperty("fname");
+    String lname = prop.getProperty("Lname");
+    String postcode = prop.getProperty("postcode");
+    String message_AddCustomer = prop.getProperty("message_AddCustomer");
+    String message_AddCustomer_Exist = prop.getProperty("message_AddCustomer_Exist");
 
+    // Constructor
+    public AddCustomerPageTest() {
+        super();
+    }
 
-public class AddCustomerPageTest extends TestBase{
-	CustomerLoginPage loginPage;
-	WithdrawalPage1 accountPage;
-	AddCustomerPage addCustomerPage;
-	String AccountexistUser = prop.getProperty("AccontExistUser");
-	String fname = prop.getProperty("fname");
-	String lname = prop.getProperty("Lname");
-	String postcode = prop.getProperty("postcode") ;
-	String message_AddCustomer = prop.getProperty("message_AddCustomer") ;
-	String message_AddCustomer_Exist = prop.getProperty("message_AddCustomer_Exist") ;
-	
-	
-	
-	public AddCustomerPageTest()
-	{
-		super();
-	}
-	
-	
-	
-	@BeforeMethod
-	public void setUp() {
-		initialization();
-		
-		try {
-			loginPage = new CustomerLoginPage();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		addCustomerPage = loginPage.ManagerLogin();
-		
-		
-		
-	}
+    @BeforeMethod
+    public void setUp() {
+        initialization();
 
-	
-	@Test(priority=1)
-	public void AddCustomerNotExist() throws InterruptedException
-	{
-		addCustomerPage.AddCustomer(fname,lname,postcode);
-		String result = addCustomerPage.getAlertMessageText();
-		String actualText = result;
+        try {
+            loginPage = new CustomerLoginPage();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        addCustomerPage = loginPage.ManagerLogin();
+    }
+
+    // Test method to add a customer who does not exist
+    @SuppressWarnings("static-access")
+	@Test(priority = 1)
+    public void AddCustomerNotExist() throws InterruptedException {
+        addCustomerPage.AddCustomer(fname, lname, postcode);
+        String result = addCustomerPage.getAlertMessageText();
+        String actualText = result;
         String expectedPartialText = message_AddCustomer;
-		   // Assertion using assertContains (custom assertion method)
+        // Assertion using assertContains (custom assertion method)
         addCustomerPage.assertContains(actualText, expectedPartialText);
         addCustomerPage.getAlert();
-		
-		
-	}
-	
-	@Test(priority=2, dependsOnMethods = "AddCustomerNotExist")
-	public void AddCustomerExist() throws InterruptedException
-	{
-		addCustomerPage.AddCustomer(fname,lname,postcode);
+    }
+
+    // Test method to add a customer who already exists
+    @Test(priority = 2, dependsOnMethods = "AddCustomerNotExist")
+    public void AddCustomerExist() throws InterruptedException {
+        addCustomerPage.AddCustomer(fname, lname, postcode);
         addCustomerPage.getAlert();
         Thread.sleep(1000);
-		addCustomerPage.AddCustomer(fname,lname,postcode);
-		String result2 = addCustomerPage.getAlertMessageText();
+        addCustomerPage.AddCustomer(fname, lname, postcode);
+        String result2 = addCustomerPage.getAlertMessageText();
         AssertJUnit.assertEquals(result2, message_AddCustomer_Exist);
-		
-		
-	}
-	
-	
-	
-	@AfterMethod
-	public void tearDown(){
-		driver.quit();
-	}
-	
-	
-	
-	
+    }
 
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
+    }
 }

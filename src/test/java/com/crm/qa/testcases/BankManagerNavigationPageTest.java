@@ -1,20 +1,19 @@
 package com.crm.qa.testcases;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.crm.qa.TestBase.TestBase;
-import com.crm.qa.pages.WithdrawalPage1;
 import com.crm.qa.pages.AddCustomerPage;
 import com.crm.qa.pages.BankManagerNavigationPage;
 
+// Test class for BankManagerNavigationPage
 public class BankManagerNavigationPageTest extends TestBase {
     BankManagerNavigationPage bankManagerPage;
 
+    // Constructor
     public BankManagerNavigationPageTest() {
         super();
     }
@@ -29,6 +28,7 @@ public class BankManagerNavigationPageTest extends TestBase {
         }
     }
 
+    // Test method to validate Bank Manager Login
     @Test
     public void testBankManagerLogin() {
         // Perform Bank Manager Login
